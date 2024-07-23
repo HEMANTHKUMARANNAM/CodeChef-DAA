@@ -1,0 +1,30 @@
+Multiple Choice Question
+What is the time complexity of this code?
+
+while n > 0:
+    print(n)
+    n //= 2
+
+
+
+
+
+
+
+
+
+
+//ANSWER
+
+Correct Answer:
+
+O(log(n))
+Explanation:
+The number of operations in this algorithm is equivalent to:
+
+i = 1
+while i <= n:
+    i = i * 2
+
+
+Either you double i each time or half n, you get the same number of operations: log(n).

@@ -1,0 +1,69 @@
+Harmonic series
+Let's look at another interesting example:
+
+for i = 1 to n
+    j = 0
+    while j < n:
+        j += i 
+        print(i + j)
+To analyze the time complexity of the given code, let's break it down into its two main parts: the outer loop and the inner while loop.
+
+Outer loop: This loop runs from 1 to 
+𝑛
+n, so it iterates 
+𝑛
+n times.
+
+Inner while loop: The behavior of this loop depends on the value of 
+𝑖
+i from the outer loop. For each iteration of the outer loop, 
+𝑗
+j starts at 0 and increases by 
+𝑖
+i until it reaches or exceeds 
+𝑛
+n. This means the number of iterations of the inner loop for each value of 
+𝑖
+i is approximately 
+𝑛
+𝑖
+i
+n
+​
+ .
+
+To find the total time complexity, we sum the number of iterations of the inner loop over all iterations of the outer loop:
+
+
+​
+  is the harmonic series which grows logarithmically. Thus, the sum can be approximated as 
+𝑛
+log
+⁡
+𝑛
+nlogn.
+
+Therefore, the time complexity of the given code is 
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn).
+
+
+
+
+
+
+
+
+
+
+//ANSWER
+
+Correct Answer:
+
+O(n * log(n))

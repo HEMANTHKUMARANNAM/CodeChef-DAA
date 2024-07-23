@@ -1,0 +1,17 @@
+
+Single loop time complexity
+What is the time complexity of this code?
+
+for i = 0 to n
+    print(i)
+
+
+
+
+
+
+//ANSWER
+
+Correct Answer:
+
+O(n)

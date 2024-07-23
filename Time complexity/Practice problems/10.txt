@@ -1,0 +1,28 @@
+Multiple Choice Question
+What is the time complexity of this code?
+
+def f(a):
+    if a == 0:
+        return 9
+    else:
+        return f(a // 2)
+
+print(f(n))
+
+
+
+
+
+
+
+
+
+
+
+//ANSWER
+
+Correct Answer:
+
+O(log(n))
+Explanation:
+The variable is getting halved at each iteration, this is the pattern for log(N).

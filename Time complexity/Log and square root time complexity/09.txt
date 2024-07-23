@@ -1,0 +1,82 @@
+Square root N time complexity
+Now that we have learned about 
+𝑙
+𝑜
+𝑔
+(
+𝑁
+)
+log(N) time complexity, there is only one other non-linear time complexity which is important to know: 
+
+O(sqrt(N)).
+
+sqrt(N).
+
+This is an example of a code with 
+
+O(sqrt(n)) time complexity.
+
+i = 1
+while i * i <= n:
+    print(i)
+    i += 1
+In this, even though 
+𝑖
+i is incremented by 1 in each iteration, the value of 
+𝑖
+i has to go only till 
+𝑖
+∗
+𝑖
+<
+=
+𝑛
+i∗i<=n.
+
+How do we calculate the total number of times the loop is running?
+It's simple. The iterations will be: 
+
+ ≤n, we aim to find the value of 
+𝑥
+x that satisfies this inequality.
+
+
+​
+ 
+
+Simplifying:
+𝑥
+≤
+𝑛
+x≤ 
+n
+​
+ 
+
+Thus, the maximum possible value of 
+𝑥
+x can be 
+𝑛
+n
+​
+ , making it the time complexity of the given algorithm.
+
+Task
+What is the complexity of this algorithm?
+
+for i = 0 to n:
+   j = 0
+   while j * j <= n:
+      print(i + j)
+      j = j + 1
+
+
+
+
+
+
+// ANSWER
+
+Correct Answer:
+
+O(n * sqrt(n))

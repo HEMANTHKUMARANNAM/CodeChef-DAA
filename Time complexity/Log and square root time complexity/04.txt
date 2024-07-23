@@ -1,0 +1,23 @@
+Three loops, three variables
+What is the time complexity of this code?
+
+for i = 1 to (n / 10)
+	for j = 1 to (2 * m)
+		for l = 1 to k
+			print((i * j) + l)
+
+
+
+
+
+
+
+
+
+// ANSWER
+
+Correct Answer:
+
+O(nmk)
+Explanation:
+Multiply all the numbers for each loop and ignore the constants.

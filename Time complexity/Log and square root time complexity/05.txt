@@ -1,0 +1,26 @@
+Two loops, three variables
+What is the time complexity of this code?
+
+for i = 1 to n
+	for j = 1 to m
+		print(i + j)
+
+	for l = 1 to k
+		print(i + l)
+
+
+
+
+
+
+
+
+
+//Answer
+Correct Answer:
+
+O(nm+nk)
+Explanation:
+The outer loop is running n times. And the inner loops are running (m + k) times. We need to keep m and k in the final complexity as they are both variables. Thus final time complexity is O(n * (m + k))
+
+

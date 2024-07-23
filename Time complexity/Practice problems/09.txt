@@ -1,0 +1,26 @@
+Multiple Choice Question
+What is the time complexity of this code?
+
+function f(a):
+    if a == 0:
+        return 9
+    else:
+        return f(a - 1)
+
+print(f(n))
+
+
+
+
+
+
+
+
+
+//ANSWER
+
+Correct Answer:
+
+O(n)
+Explanation:
+For any value of *a* greater than 0, the function is calling itself again. Thus the total function calls will be O(a) which is O(n)

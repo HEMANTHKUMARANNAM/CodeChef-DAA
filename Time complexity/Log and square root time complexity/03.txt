@@ -1,0 +1,24 @@
+Two loops, two variables
+What is the time complexity of this code?
+
+for i = 1 to (n / 10)
+	for j = 1 to (2 * m)
+		print(i + j)
+
+
+
+
+
+
+
+
+
+
+//ANSWER
+
+
+Correct Answer:
+
+O(n * m)
+Explanation:
+Again, constants can be ignored.

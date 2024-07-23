@@ -1,0 +1,23 @@
+For and while loop
+What is the time complexity of this code?
+
+for i = 1 to n:
+    j = 1
+    while j * j <= m:
+        print(i + j)
+        j += 1
+
+
+
+
+
+
+
+
+
+//ANSWER
+
+
+Correct Answer:
+
+O(n * sqrt(m))

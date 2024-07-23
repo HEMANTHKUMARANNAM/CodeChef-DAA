@@ -1,0 +1,21 @@
+Two loops, single variable
+What is the time complexity of this code?
+
+for i = 1 to n
+	for j = 1 to n / 2
+		print(i + j)
+
+
+
+
+
+
+
+
+//ANSWER
+Correct Answer:
+
+O(n^2)
+Explanation:
+The outer loop runs till n and and the inner loop runs till n / 2. Total operations are thus: (n * n) / 2. But as we can ignore constants when calculating time complexity, the final complexity will be O(n ^ 2).
+

@@ -1,0 +1,22 @@
+Multiple Choice Question
+What is the time complexity of this code?
+
+while n > 0:
+    print(n)
+    n //= 3
+
+
+
+
+
+
+
+
+
+//ANSWER
+
+Correct Answer:
+
+O(log(n))
+Explanation:
+We already learned that the multiplier doesn't really matter as long as it is a small constant. The time complexity will still be log(n).

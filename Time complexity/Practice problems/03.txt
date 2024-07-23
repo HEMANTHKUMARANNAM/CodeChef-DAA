@@ -1,0 +1,23 @@
+Multiple Choice Question
+What is the time complexity of this code?
+
+for i = 1 to n:
+    j = 1
+    while j <= i:
+        print(i + j)
+        j *= 2
+
+
+
+
+
+
+
+
+
+
+//ANSWER
+
+Correct Answer:
+
+O(n * log(n))

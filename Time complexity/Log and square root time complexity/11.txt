@@ -1,0 +1,21 @@
+Loop and log
+What is the time complexity of this code?
+
+for i = 1 to n:
+    j = 1
+    while j <= n:
+        print(i + j)
+        j *= 2
+
+
+
+
+
+
+
+
+// ANSWER
+
+Correct Answer:
+
+O(n * log(n))

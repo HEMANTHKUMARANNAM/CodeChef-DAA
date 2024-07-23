@@ -1,0 +1,20 @@
+Increment by 2, nested loops
+What is the time complexity of this code?
+
+i = 1
+while (i < n)
+	i = i + 2
+	j = 1
+	while (j < m)
+		j = j + 1
+		print(i + j)
+
+
+
+
+
+Correct Answer:
+
+O(nm)
+Explanation:
+The outer loop is running n / 2 times and the inner loop is running m times. Overall time complexity is O(n * m). Ignoring constants, of course.

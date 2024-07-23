@@ -1,0 +1,74 @@
+Log N time complexity
+Till now we have seen time complexity of loops which run linearly from 1 to N, thus having approximately N number of operations. Even if we are incrementing 
+𝑖
+i by 1, 2 or 10, the constant doesn't really matter.
+
+But there are certain types of loops which do very few operations than N and thus we need other ways to denote their time complexity.
+
+Look at the below code for an example
+
+i = 1
+while i <= n:
+    print(i)
+    i *= 2
+Here 
+𝑖
+i is getting doubled in each iteration.
+
+
+
+....
+
+The maximum possible value for 
+𝑥
+x is 
+log
+⁡
+2
+(
+𝑛
+)
+log 
+2
+​
+ (n), and 
+𝑥
+x denotes the maximum number of times the loop will run. Thus, the time complexity of this algorithm will be 
+log
+⁡
+2
+(
+𝑛
+)
+log 
+2
+​
+ (n), as figured out by the total number of operations done in the loop.
+
+In general, you can remember that anytime a variable in loop is multiplied by a number greater than 1, the time complexity of the loop will be of the form: 
+𝑙
+𝑜
+𝑔
+(
+𝑛
+)
+log(n).
+
+Task
+What will be the time complexity of this algorithm?
+
+
+
+
+
+
+
+
+
+// ANSWER
+
+Correct Answer:
+
+O(log(n))
+Explanation:
+Note how we don't consider the base when writing the time complexity in log.

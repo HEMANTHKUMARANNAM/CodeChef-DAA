@@ -1,0 +1,12 @@
+
+
+
+
+
+//ANSWER
+
+Correct Answer:
+
+O(n)
+Explanation:
+The time complexity will be be O(n) because we only consider the biggest factor when an algorithm has difference parts with different complexities. Remember Rule 2 of calculating time complexity?

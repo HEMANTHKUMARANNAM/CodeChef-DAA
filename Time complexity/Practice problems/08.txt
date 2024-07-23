@@ -1,0 +1,21 @@
+Multiple Choice Question
+What is the time complexity of this code?
+
+function f(a):
+    return a + 18
+
+print(f(n))
+
+
+
+
+
+
+
+//ANSWER
+
+Correct Answer:
+
+O(1)
+Explanation:
+Only one operation is happening inside the function, thus the time complexity is O(1).
