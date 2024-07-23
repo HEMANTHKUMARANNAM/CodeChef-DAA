@@ -1,0 +1,29 @@
+Finding time complexity - O(N)
+Let's look at another algorithm now.
+
+for i = 0 to N
+    print(i)
+In the above algorithm, we are running a loop from 0 to N. In total the loop will run N times. For each iteration of the loop we are doing one operation `print(i).
+
+The final time complexity will be: N * O(1) => O(N).
+
+This time the algorithm dependent on a variable N and with that the time complexity also has the value N.
+
+Task
+What if we were doing two operations inside the loop?
+
+for i = 0 to N
+    print(i)
+    print(i * 2)
+
+
+
+
+
+
+
+// ANSWER
+
+Correct Answer:
+
+O(N)

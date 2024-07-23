@@ -1,0 +1,38 @@
+Finding time complexity - Rule 2
+Let's see a different example now.
+
+a = 4 + 5
+for i = 0 to N
+    print(a)
+Can you determine the time complexity of this algorithm?
+
+Time complexity of first line => O(1) Time complexity of the loop => O(N)
+
+Total time complexity => O(1) + O(N).
+
+But can we use two Big Os to define time complexity of an algorithm? Nope
+
+Rule 2 - Focus only on the largest factor
+If an algorithm has multiple different parts with different time complexity, when determining the final time complexity we only look at the largest factor.
+
+Because the biggest factor will slow down an algorithm the most.
+
+Thus the time complexity of the above algorithm will be: O(N)
+
+Task
+Can you determine final time complexity of the given algorithm, considering the two rules?
+
+for i = 0 to N
+    print(i)
+
+for j = 0 to N
+    print(j)
+
+
+
+// ANSWER
+
+
+Correct Answer:
+
+O(N)

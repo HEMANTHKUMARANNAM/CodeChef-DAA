@@ -1,0 +1,42 @@
+Time complexity for DSA
+We will solve a lot of examples on time complexity, but let’s take a break and think about the applications of time complexity when it comes to solving DSA problems.
+
+Remember how each problem statement on CodeChef has a Constraints section. This section talks about the constraint on the size of input given to you.
+
+The constraints section generally look like this:
+1
+≤
+𝑁
+≤
+1
+0
+5
+1≤N≤10 
+5
+ 
+
+This means that the value of N can range from 1 to 10^5.
+
+For harder problems it is not enough that your solution is correct, it also has to be efficient enough to run within the given time limit.
+
+In general, you can assume that the current day computers can run up to 10 ^ 8 operations per second. You can calculate the worst case time complexity of your algorithm and check if the total number of operations are beyond 10 ^ 8. If the operations performed by your algorithm exceeds 10 ^ 8, you will get TLE or Time limit exceeded.
+
+Task
+What will the number of operations performed by your algorithm be, if maximum value of N can be 10 ^ 6 and time complexity of the algorithm is O(N)?
+
+
+
+
+
+
+
+
+
+//ANSWER
+
+Correct Answer:
+
+10 ^ 6
+Explanation:
+Total operations => O(N) = 10^6 (approx.)
+

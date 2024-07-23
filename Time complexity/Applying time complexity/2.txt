@@ -1,0 +1,24 @@
+What do you think about the time complexity of this algorithm?
+
+for i = 0 to N
+    for j = 0 to M
+        print(i)
+
+
+
+
+
+
+
+
+//ANSWER
+
+Correct Answer:
+
+O(N * M)
+Explanation:
+Outer loop runs for N iterations, and for each iteration of the outer loop the inner loop again runs for M iterations.
+
+Total operations => N * M * O(1) => O(N * M)
+
+We cannot ignore any of N or M as both are variable.

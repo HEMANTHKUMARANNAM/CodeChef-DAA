@@ -1,0 +1,41 @@
+Finding time complexity - Nested loops
+Let's take a bit complex algorithm now.
+
+for i = 0 to N
+    for j = 0 to N
+        print(i)
+        print(j)
+What do you think will the time complexity be?
+
+This is a nested loop. The outer loop runs N times. And for each iteration of the outer loop, the inner loop also runs N times.
+
+For each iterations of inner loop there are two operations.
+
+Complexity of line 3 and 4 => O(1) + O(1) => O(1)
+
+Total complexity of inner loop => N * (complexity of line 3 and 4) => N * O(1) => O(N)
+
+Total complexity of outer loop => N * (complexity of line 2 - 4) => N * O(N) => O(N * N)
+
+It can also be represented as O(N ^ 2)
+
+Notice how the number of operations are multiplied in case of nested codes.
+
+Task
+Now can you find the complexity of this algorithm?
+
+for i = 0 to N
+    for j = 0 to N
+        for k = 0 to N
+            print(i)
+
+
+
+
+// ANSWER
+
+Correct Answer:
+
+O(N ^ 3)
+Explanation:
+Three loops, each run for N times, total complexity is N * N * N * O(1), which is O(N ^ 3)

@@ -1,0 +1,49 @@
+Two loops
+We have learned about the basic algorithms and their time complexities in the last few lessons, but there are many different algorithms and thus there can be a lot of different variations in time complexity as well.
+
+See this algorithm:
+
+for i = 0 to N
+    print(i)
+
+for j = 0 to M
+    print(j)
+What do you think will the time complexity be? Let's calculate.
+
+First loop => O(N)
+Second loop => O(M)
+
+Total => O(N + M)
+
+But Rule 2 says that we only care about the largest factor no?
+
+We cannot ignore either of N or M because both are variable and we don't know which one is bigger or smaller. So we have to keep both of them in the final complexity.
+
+If we are already given that M is very large as compared to N, then we can say the complexity is O(M). But in general case, it is still O(N + M).
+
+Task
+Now can you think of what the time complexity will be for this algorithm?
+
+for i = 0 to N
+    print(i)
+
+for j = 0 to M
+    print(j)
+
+for i = 0 to N
+    print(i)
+
+
+
+
+
+
+
+
+// ANSWER
+
+Correct Answer:
+
+O(N + M)
+Explanation:
+The time complexity will still be O(N + M) as we can ignore the constant 2.

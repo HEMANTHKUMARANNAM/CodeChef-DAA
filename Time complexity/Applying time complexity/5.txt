@@ -1,0 +1,34 @@
+Time complexity for DSA
+sum = 0
+for i = 1 to N
+    sum += i
+print(sum)
+Can this same algorithm run within a second if the constraints on N are:
+1
+≤
+𝑁
+≤
+1
+0
+5
+1≤N≤10 
+5
+ ?
+
+
+
+
+
+
+
+
+
+
+
+ //ANSWER
+
+ Correct Answer:
+
+Yes
+Explanation:
+Yes it can still run because 10 ^ 5 is still less than 10 ^ 8.

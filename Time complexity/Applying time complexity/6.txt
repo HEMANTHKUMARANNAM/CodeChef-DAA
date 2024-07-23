@@ -1,0 +1,42 @@
+Time complexity for DSA
+Let’s look at another algorithm, which calculates the sum of all the pairs (i, j) where 1 <= i <= N and 1 <= j <= N.
+
+sum = 0
+for i = 1 to N
+     for j = 1 to N
+          sum += i
+          sum += j
+Can this algorithm run within a second if the constraints on N are:
+1
+≤
+𝑁
+≤
+1
+0
+5
+1≤N≤10 
+5
+ ?
+
+
+
+
+
+
+
+
+ //ANSWER
+
+ Correct Answer:
+
+No
+Explanation:
+The time complexity of the given algorithm is O(N ^ 2), which is N * N operations for any input N.
+
+When N can be at most 10 ^ 5, the total operations will be 10 ^ 5 * 10 ^ 5 => 10 ^ 10.
+
+
+10 ^ 10 is higher than 10 ^ 8 which is the number of operation a computer can run within a second. Thus this algorithm will give TLE or Time limit exceeded.
+
+But this algorithm will easily work if N is less than 10 ^ 4.
+

@@ -1,0 +1,21 @@
+Time complexity is a way to measure how long an algorithm takes to run as the amount of input data increases. Think of it as a method for figuring out how fast or slow an algorithm is.
+
+There are multiple ways to measure time complexity of an algorithm:
+
+Best case
+Average case
+Worst case
+We will focus on understanding the worst-case scenario of how an algorithm performs. We use a special notation called “Big O notation” to talk about worst-case time complexity.
+
+Why is Time Complexity important?
+Time complexity of an algorithm is independent from the machine the algorithm is going to run on. Understanding time complexity is important because it gives us a way of comparing algorithms without worrying about the system on which the algorithms are going to run.
+
+
+
+
+
+
+
+// ANSWER
+
+Big O notation
