@@ -14,3 +14,5 @@ for i in range(t):
             ans = ans + "B"
             
     print(ans)
+
+
