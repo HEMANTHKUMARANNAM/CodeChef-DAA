@@ -1,22 +1,63 @@
-# Replace '_' to solve the problem
-def partition(a, size_a):
-    pivot = a[size_a-1]
-    idx = 0
+import random
 
-    for i in range(size_a):
+def partition(a, l, r):
+    """
+    Partition the array into two parts and return the index of the pivot element.
+    Args:
+    - a: The array to be partitioned
+    - l: The leftmost index of the subarray
+    - r: The rightmost index of the subarray
+    Returns:
+    - The index of the pivot element
+    """
+    pivot = a[r]
+    idx = l
+
+    for i in range(l, r):
         if a[i] <= pivot:
             a[idx], a[i] = a[i], a[idx]
             idx += 1
 
-    a[idx], a[size_a - 1] = a[size_a - 1], a[idx]
+    a[idx], a[r] = a[r], a[idx]
 
+    # Return the final pivot index
+    return idx
+
+def random_part(a, l, r):
+    """
+    Swap a random element with the last element in the subarray.
+    Args:
+    - a: The array
+    - l: The leftmost index of the subarray
+    - r: The rightmost index of the subarray
+    """
+    rand_idx = random.randint(l, r)
+    a[rand_idx], a[r] = a[r], a[rand_idx]
+
+def sort(a, l, r):
+    """
+    Recursive function to sort the array using quicksort.
+    Args:
+    - a: The array to be sorted
+    - l: The leftmost index of the subarray
+    - r: The rightmost index of the subarray
+    """
+    if r - l < 1:
+        return  # Arrays of size 1 and 0 are already sorted
+
+    random_part(a, l, r)
+    pivot = partition(a, l, r)
+
+    # Sorting both halves of the array
+    sort(a, l, pivot - 1)
+    sort(a, pivot + 1, r)
 
 if __name__ == "__main__":
     n = int(input())
 
     a = list(map(int, input().split()))
 
-    partition(a, n)
+    sort(a, 0, n - 1)
 
     for i in range(n):
         print(a[i], end=" ")
