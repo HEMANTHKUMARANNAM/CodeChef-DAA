@@ -1,25 +1,32 @@
-T = int(input())
+def backtrack(nums, path, used, res):
+    if len(path) == len(nums):
+        res.append(path[:])
+        return
+    
+    for i in range(len(nums)):
+        if used[i] or (i > 0 and nums[i] == nums[i-1] and not used[i-1]):
+            continue
+        
+        used[i] = True
+        path.append(nums[i])
+        backtrack(nums, path, used, res)
+        path.pop()
+        used[i] = False
 
+def find_unique_permutations(A):
+    A.sort()
+    res = []
+    used = [False] * len(A)
+    backtrack(A, [], used, res)
+    return res
+
+# Driver code
+T = int(input())
 for _ in range(T):
-    N, B = map(int,input().split())
-    A = sorted(list(set(map(int,input().split()))))
-    N = len(A)
+    N = int(input())
+    A = list(map(int, input().split()))
+    unique_permutations = find_unique_permutations(A)
     
-    combs = []
-    def trycombs(L, ib):
-        n = sum(L)
-        if ib >= N or A[ib] + n > B:
-            return
-        for i in range(ib,N):
-            a = A[i]
-            if n + a == B:
-                combs.append(L + [a])
-            elif n + a < B:
-                trycombs(L + [a], i)
-            else: 
-                break 
-    
-    trycombs([],0)
-    print(len(combs))
-    for c in combs:
-        print(*c)
+    print(len(unique_permutations))
+    for perm in unique_permutations:
+        print(" ".join(map(str, perm)))
