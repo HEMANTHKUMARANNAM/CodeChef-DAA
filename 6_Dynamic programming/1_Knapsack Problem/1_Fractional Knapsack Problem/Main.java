@@ -10,7 +10,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
             double w = sc.nextDouble();
             double v = sc.nextDouble();
-            double value_per_weight = w / v;
+            double value_per_weight = v / w;
 
             a[i] = new Pair(value_per_weight, w);
         }
@@ -46,4 +46,3 @@ public class Main {
 
 
 
-// actually code is wrong instead of v/w they taken w/v. i hava reported
