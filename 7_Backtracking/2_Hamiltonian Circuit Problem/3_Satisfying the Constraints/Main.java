@@ -4,30 +4,39 @@ class main {
 
     // Check if 'next' vertex can be added after vertex 'v'
     static boolean check(int v, int next, ArrayList<Integer> circuit, boolean[][] mat) {
-        // Write your code here
+        // Check if 'next' vertex is adjacent to 'v'
+        if (!mat[v][next]) {
+            return false; // Not adjacent, so not a valid move
+        }
+        
+        // Check if 'next' vertex has already been visited (except if it's the starting vertex at the end)
+        if (circuit.contains(next)) {
+            return false; // Already visited, so not a valid move
+        }
 
         return true;
     }
 
     static void backtrack(int v, int n, ArrayList<Integer> circuit, ArrayList<ArrayList<Integer>> ans, boolean[][] mat) {
         if (circuit.size() == n) { // Circuit is completed
-            if (mat[circuit.get(0)][v]) { // Check if cycle is completed, starting should be adjacent to ending
-                circuit.add(circuit.get(0));
-                ans.add(new ArrayList<>(circuit));
-                circuit.remove(circuit.size() - 1);
+            if (mat[circuit.get(0)][v]) { // Check if cycle is completed, i.e., first and last are adjacent
+                circuit.add(circuit.get(0)); // Complete the cycle
+                ans.add(new ArrayList<>(circuit)); // Store the valid Hamiltonian cycle
+                circuit.remove(circuit.size() - 1); // Backtrack: remove the last added vertex (start vertex)
             }
             return;
         }
 
         for (int i = 1; i <= n; i++) {
             // Calling the check function
-            if (!check(v, i, circuit, mat))
+            if (!check(v, i, circuit, mat)) {
                 continue;
+            }
 
-            // If not visit and is adjacent, add it to our candidate solution
+            // If valid, add the next vertex to the current circuit and continue exploring
             circuit.add(i);
             backtrack(i, n, circuit, ans, mat);
-            circuit.remove(circuit.size() - 1);
+            circuit.remove(circuit.size() - 1); // Backtrack: remove the vertex added in this step
         }
     }
 
