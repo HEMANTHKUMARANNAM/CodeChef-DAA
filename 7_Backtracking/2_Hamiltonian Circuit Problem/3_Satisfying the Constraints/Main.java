@@ -5,6 +5,11 @@ class main {
     // Check if 'next' vertex can be added after vertex 'v'
     static boolean check(int v, int next, ArrayList<Integer> circuit, boolean[][] mat) {
         // Write your code here
+        
+        if( !mat[v][next ] || circuit.indexOf(next)!=-1 )
+        {
+            return false;
+        }
 
         return true;
     }
