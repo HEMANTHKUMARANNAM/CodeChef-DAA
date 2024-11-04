@@ -13,13 +13,6 @@ This repository contains solutions for **all modules (1-10)** of the CodeChef DA
 
 ---
 
-## 🚀 How to Use
-
-1. **Browse each module folder** to view the corresponding solutions.
-2. Code snippets are structured to provide **both optimal solutions and explanations** where needed.
-
----
-
 ## 📝 Feedback
 
 Found any mistakes or have suggestions? We value your feedback! Please share it [here](https://forms.gle/jBJPyJsSU1tDLK8G6).
